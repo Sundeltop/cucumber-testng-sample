@@ -17,7 +17,7 @@ public class SimpleStep {
 
     @When("User searches for {string}")
     public void user_searchers_for(String searchInput) {
-        $("input[name='q']")
+        $("[name='q']")
                 .setValue(searchInput)
                 .pressEnter();
     }
